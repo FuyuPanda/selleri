@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "20cf66e2-6553-4ec3-bbe4-db309c1ee657",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Array",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}array",
+					"host": [
+						"{{base_url}}array"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Array",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}array",
+							"host": [
+								"{{base_url}}array"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "155"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9b-qv1cPGMPS/szqpXlkETB7IIr1R4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 14:50:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Ok\",\n    \"code\": 200,\n    \"data\": {\n        \"color\": [\n            \"Merah\",\n            \"Kuning\",\n            \"Hijau\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"XXL\"\n        ],\n        \"material\": [\n            \"Katun\",\n            \"Polyester\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Filter random user by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}user/title",
+					"host": [
+						"{{base_url}}user"
+					],
+					"path": [
+						"title"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Filter random user by title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/title",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"title"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1905"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"771-U9PX+V9oFx26NkHRIHjZz2QU/t0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 15:49:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Ok\",\n    \"code\": 200,\n    \"data\": [\n        {\n            \"fullname\": \"Mr.Randall Bates\",\n            \"age\": 40,\n            \"city\": \"Bunbury\",\n            \"email\": \"randall.bates@example.com\",\n            \"phone\": \"00-6419-1723\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/56.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Hans-Wolfgang Papke\",\n            \"age\": 45,\n            \"city\": \"Merzig\",\n            \"email\": \"hans-wolfgang.papke@example.com\",\n            \"phone\": \"0031-7259220\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/20.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Phillip Lambert\",\n            \"age\": 35,\n            \"city\": \"Riverside\",\n            \"email\": \"phillip.lambert@example.com\",\n            \"phone\": \"(027)-722-8631\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/27.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Justin Gagnon\",\n            \"age\": 68,\n            \"city\": \"Borden\",\n            \"email\": \"justin.gagnon@example.com\",\n            \"phone\": \"107-856-7711\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/27.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Daniel Scott\",\n            \"age\": 61,\n            \"city\": \"Oakville\",\n            \"email\": \"daniel.scott@example.com\",\n            \"phone\": \"015-280-1883\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/43.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Antoine White\",\n            \"age\": 49,\n            \"city\": \"Flatrock\",\n            \"email\": \"antoine.white@example.com\",\n            \"phone\": \"399-150-3645\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/15.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Peter Ingvaldsen\",\n            \"age\": 69,\n            \"city\": \"Øksfjord\",\n            \"email\": \"peter.ingvaldsen@example.com\",\n            \"phone\": \"84883699\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/29.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Rory Akkermans\",\n            \"age\": 57,\n            \"city\": \"Wittem\",\n            \"email\": \"rory.akkermans@example.com\",\n            \"phone\": \"(538)-503-0274\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/64.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.اميرمحمد کوتی\",\n            \"age\": 58,\n            \"city\": \"خمینی\\u200cشهر\",\n            \"email\": \"myrmhmd.khwty@example.com\",\n            \"phone\": \"044-78884144\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/44.jpg\"\n        },\n        {\n            \"fullname\": \"Mr.Isak Emberland\",\n            \"age\": 52,\n            \"city\": \"Lundermoen\",\n            \"email\": \"isak.emberland@example.com\",\n            \"phone\": \"75906343\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/33.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Filter random user by age",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}user/age",
+					"host": [
+						"{{base_url}}user"
+					],
+					"path": [
+						"age"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Filter random user by age",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}user/age",
+							"host": [
+								"{{base_url}}user"
+							],
+							"path": [
+								"age"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "451"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c3-g2mKgAvqpdDFq1sw8qBO9B16qbI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 15:55:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Ok\",\n    \"code\": 200,\n    \"data\": [\n        {\n            \"fullname\": \"Mademoiselle.Géraldine Guerin\",\n            \"age\": 26,\n            \"city\": \"Chavannes-le-Chêne\",\n            \"email\": \"geraldine.guerin@example.com\",\n            \"phone\": \"075 499 88 04\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/82.jpg\"\n        },\n        {\n            \"fullname\": \"Ms.Lilian Ritter\",\n            \"age\": 28,\n            \"city\": \"Saarlouis\",\n            \"email\": \"lilian.ritter@example.com\",\n            \"phone\": \"0366-4988305\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/62.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

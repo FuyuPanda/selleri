@@ -1,0 +1,25 @@
+{
+  "name": "selleri",
+  "version": "1.0.0",
+  "description": "test selleri",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuyuPanda/selleri.git"
+  },
+  "author": "Panji Bagaskoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FuyuPanda/selleri/issues"
+  },
+  "homepage": "https://github.com/FuyuPanda/selleri#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2"    
+  }
+}
